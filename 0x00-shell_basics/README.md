@@ -1,4 +1,4 @@
 project for shil basic
 
 
-0 - to print abs value of where i am
+0 - This will print the absolute path name of the current working directory to the terminal.
