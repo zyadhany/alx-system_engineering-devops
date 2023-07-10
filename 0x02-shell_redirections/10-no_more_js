@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name '*.js' -printf '%f\n' -exec rm -i {} \;
+find . -type f -name '*.js' -print0 | xargs -0 -I{} rm {}
