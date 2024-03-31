@@ -1,6 +1,6 @@
 # pkill
 
-exec { 'kill_killmenow_process':
+exec { 'pkill':
   command => 'pkill -f "killmenow"',
   provider => 'shell',
 }
