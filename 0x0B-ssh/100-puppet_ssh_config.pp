@@ -3,11 +3,11 @@
 file { 'config':
   ensure => 'present',
   path   => '/etc/ssh/ssh_config',
-  line   => '    PasswordAuthentication no',
+  line   => '    IdentityFile ~/.ssh/school',
 }
 
 file { 'config':
   ensure => 'present',
   path   => '/etc/ssh/ssh_config',
-  line   => '    IdentityFile ~/.ssh/school',
+  line   => '    PasswordAuthentication no',
 }
