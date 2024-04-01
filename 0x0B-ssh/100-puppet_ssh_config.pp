@@ -6,7 +6,7 @@ file { 'config':
   line   => '    IdentityFile ~/.ssh/school',
 }
 
-file { 'config':
+file { 'configpass':
   ensure => 'present',
   path   => '/etc/ssh/ssh_config',
   line   => '    PasswordAuthentication no',
