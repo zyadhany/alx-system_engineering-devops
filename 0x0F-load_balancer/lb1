@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# connect to shh
+ssh ubuntu@54.82.216.113 -i ~/.ssh/id_rsa
