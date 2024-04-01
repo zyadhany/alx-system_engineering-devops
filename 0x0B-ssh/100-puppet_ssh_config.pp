@@ -3,11 +3,8 @@
 file { 'configpass':
   ensure => 'present',
   path   => '/etc/ssh/ssh_config',
-  line   => '    PasswordAuthentication no',
-}
-
-file { 'config':
-  ensure => 'present',
-  path   => '/etc/ssh/ssh_config',
-  line   => '    IdentityFile ~/.ssh/school',
+  content   => "# SSH client configuration
+                Host *
+                    IdentityFile ~/.ssh/school
+                    PasswordAuthentication no",
 }
