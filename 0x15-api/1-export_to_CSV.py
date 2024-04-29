@@ -11,8 +11,9 @@ def main():
     id = sys.argv[1]
     name = requests.get("https://jsonplaceholder.typicode.com/users/{}"
                         .format(id)).json()['username']
-    todos = requests.get("https://jsonplaceholder.typicode.com/todos/?userId={}"
-                        .format(id)).json()
+    todos = requests.get
+    ("https://jsonplaceholder.typicode.com/todos/?userId={}"
+     .format(id)).json()
 
     with open('{}.csv'.format(id), 'w+') as file:
         for todo in todos:
