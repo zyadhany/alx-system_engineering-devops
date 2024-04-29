@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ get api to do """
-import sys
 import requests
+import sys
 
 
 def main():
@@ -23,7 +23,7 @@ def main():
           .format(name, len(done), len(todo)))
 
     for task in done:
-        print("\t", task, sep="")
+        print("\t", task, sep=" ")
 
 
 if __name__ == "__main__":
