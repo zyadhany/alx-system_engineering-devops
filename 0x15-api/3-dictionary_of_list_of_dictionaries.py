@@ -24,7 +24,7 @@ def main():
             tasks.append(task)
         info[id] = tasks
 
-    with open('{}.json'.format(id), 'w+') as file:
+    with open('todo_all_employees.json', 'w+') as file:
         file.write(json.dumps(info))
 
 
